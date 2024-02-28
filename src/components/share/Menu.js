@@ -27,16 +27,12 @@ const items = [
   },
   getItem("مدیریت مقالات", "posts", <CopyOutlined />, [
     getItem(<Link to="/post"> لیست مقالات</Link>, "post_list"),
-    getItem("افزودن مقالات", "add_post"),
+    // getItem("افزودن مقالات", "add_post"),
   ]),
 ];
 const Menu = () => {
-  // const onClick = e => {
-  //   console.log('click ', e)
-  // }
   return (
     <AntMenu
-      // onClick={onClick}
       style={{
         width: 256,
       }}
