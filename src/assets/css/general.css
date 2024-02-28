@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "Vazir";
+  src: url(../fonts/Vazir.ttf);
+}
+* {
+  font-family: "Vazir";
+}
+
+.content {
+  margin: 2em 5em 2em 2em;
+  min-height: 80%;
+  background-color: #fff;
+  padding: 2em;
+}
+
+i.icon.far {
+  font-family: "Font Awesome 5 Pro";
+}
+
+i.icon.fas {
+  font-family: "Font Awesome 5 Pro";
+}
+
+body:not(.fa, .fas, .far),
+[class*="css-"] {
+  font-family: vazir;
+}
