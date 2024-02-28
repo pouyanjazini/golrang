@@ -9,7 +9,6 @@ export default function Table({ columns, data, rowKey = "id" }) {
   console.log("data", data);
 
   const handleSearch = (selectedKeys, confirm, dataIndex) => {
-    // console.log("handleSearch", dataIndex);
     confirm();
   };
 
@@ -31,7 +30,6 @@ export default function Table({ columns, data, rowKey = "id" }) {
             placeholder={`جستجو در ${title}`}
             value={selectedKeys[0]}
             onChange={(e) => {
-              // console.log("e.target.value", e.target.value);
               setSelectedKeys(e.target.value ? [e.target.value] : []);
             }}
             onPressEnter={() => handleSearch(selectedKeys, confirm, dataIndex)}
